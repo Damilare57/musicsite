@@ -1,0 +1,85 @@
+@charset "UTF-8";
+body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Courier New', Courier, monospace;
+    background-color: #ffffff;
+    opacity: 0; /* Start with opacity set to 0 */
+    animation: fade-in 4s forwards; /* Apply the fade-in animation */
+}
+@keyframes fade-in {
+    from {
+        opacity: 0; /* Start with 0 opacity */
+    }
+    to {
+        opacity: 1; /* End with full opacity */
+    }
+}
+
+.header {
+    font-size: 500%;
+    background-color: rgb(255, 255, 255);
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    font-weight: 400;
+}
+
+#body {
+    position: relative;
+    min-height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center content horizontally */
+}
+
+.image {
+    display: block;
+    width: 30%; /* Use percentage for responsive image size */
+    margin: 0 auto 20px; /* Add margin below the image */
+    max-width: 1000px;
+    min-width: 300px;
+
+}
+
+#container {
+    position: absolute;
+    top: 49%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    padding: 2vw; /* Use viewport width unit for responsive padding */
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.nav_elements {
+    margin: 2px 0;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: medium; 
+    min-width: fit-content;
+    color: black;
+
+}
+
+.nav_elements:hover{
+color: rgb(255, 0, 0);
+font-size: 1.5vw;
+transition: 0.1s;
+}
+.center-content {
+    display: grid;
+    place-items: center;
+    min-height: 55vh; /* Center within viewport height */
+}
